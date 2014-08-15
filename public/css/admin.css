@@ -1,0 +1,230 @@
+/******************************************************* Seleccion de Sitio  **/
+
+UL.siteList {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+UL.siteList LI {
+	with:auto;
+	height:auto;
+	padding:5px;
+	margin:5px;
+	display:inline-block;
+	border-radius:3px;
+	border:1px #bce8f1 solid;
+	background-color:#d9edf7;
+	overflow:hidden;
+	position:relative;
+}
+
+UL.siteList LI A {
+	with:180px;
+	height:80px;
+	margin:auto;
+	display:block;
+}
+
+UL.siteList LI P {
+	width:100%;
+	color:#3a87ad;
+	text-align:center;
+	position:absolute;
+	bottom:10px;
+	font-weight:bold;
+	margin:0;
+}
+
+
+/******************************************************* Image Galery 04/12/2013 **/
+UL.imageGal {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+UL.imageGal LI {
+	width: 150px;
+	height:auto;
+	min-height:70px;
+	margin:10px;
+	display:inline-block;
+	position:relative;
+}
+
+UL.imageGal LI IMG {
+	cursor:move;
+}
+
+UL.imageGal LI A.accion {
+	right:2px;
+	position:absolute;
+	display:none;
+}
+
+UL.imageGal LI A.first {
+	top:2px;
+}
+
+UL.imageGal LI A.sec {
+	top:24px;
+}
+
+
+
+/******************************************************* Drag & Drop uploader **/
+
+
+.dragandrophandler {
+	width:770px;
+	height:50%;
+	position:fixed; 
+	top:210px;
+	border-radius:4px;
+	display:none;
+	color:#92AAB0;
+	background:#000000;
+	opacity:0.5;	
+	vertical-align:middle;
+	font-size:170%;
+	line-height:120px;
+	text-align:center;
+}
+.progressBar {
+    width: 200px;
+    height: 22px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    display:inline-block;
+    margin:0px 10px 5px 5px;
+    vertical-align:top;
+}
+ 
+.progressBar div {
+    height: 100%;
+    color: #fff;
+    text-align: right;
+    line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+    width: 0;
+    background-color: #0ba1b5; border-radius: 3px;
+}
+.statusbar {
+    border-top:1px solid #A9CCD1;
+    min-height:25px;
+    width:100%;
+    padding:10px 10px 0px 10px;
+    vertical-align:top;
+	box-sizing: border-box; 	
+	text-align:center;
+}
+.statusbar:nth-child(odd){
+    background:#EBEFF0;
+}
+.filename {
+display:inline-block;
+vertical-align:top;
+width:350px;
+}
+.filesize {
+display:inline-block;
+vertical-align:top;
+color:#30693D;
+width:100px;
+margin-left:10px;
+margin-right:5px;
+
+}
+.abort {
+background-color:#A8352F;
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+border-radius:4px;display:inline-block;
+color:#fff;
+font-family:arial;font-size:13px;font-weight:normal;
+padding:4px 15px;
+cursor:pointer;
+vertical-align:top;
+}
+
+
+/******************************************************* Selectable MANY to MANY **/
+
+UL.optionList, UL.optionListEditable {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+UL.optionList LI {
+	display:inline-block;
+	background:#eaeaea;
+	border:1px #ebebeb solid;
+	border-radius:3px;
+	margin-right:5px;
+	padding:5px;
+	padding-right:23px;
+	position:relative;
+}
+
+UL.optionList LI A {
+	display:block;
+	padding-left:3px;
+	padding-right:3px;	
+	border-radius:5px;
+	background:#666666;
+	color:#ffffff;
+	position:absolute;
+	top:6px;
+	right:3px;
+	font-size:10px;
+}
+
+/** Editable version **/
+UL.optionListEditable {
+	display:block;
+	position:relative;
+}
+
+UL.optionListEditable LI SPAN {
+	background:#eaeaea;
+	border:1px #ebebeb solid;
+	display:inline-block;
+	border-radius:3px;
+
+	padding:5px;
+	padding-right:5px;
+}
+
+UL.optionListEditable LI SPAN.legend {
+	background:none;
+}
+
+UL.optionListEditable LI INPUT {
+	width:35px !important;
+}
+
+UL.optionListEditable LI INPUT.large {
+	width:225px !important;
+}
+
+UL.optionListEditable LI A {
+	display:inline-block;
+	padding-left:3px;
+	padding-right:3px;
+	margin-left:5px;
+	border-radius:5px;
+	background:#666666;
+	color:#ffffff;
+	font-size:10px;
+}
+
+
+/***************************************** DATATABLES JS Plugin **/
+
+.dataTables_length { width: 140px; text-align: left; margin-top:2px; }
+.dataTables_length SELECT { width: 60px; }
+.dataTables_filter { margin-top:-44px; width:auto; text-align: left; }
+.dataTables_filter INPUT { width: 110px;  }
+.DTTT_container { width:auto; margin-left:200px; opacity: 0}
